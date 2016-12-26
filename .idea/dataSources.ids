@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - jsp_db@localhost" uuid="09923c4e-18f3-43a4-b0e5-726fff365639">
+    <database-info product="MySQL" version="5.5.5-10.1.10-MariaDB" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
+    <schema name="" catalog="jsp_db"/>
+    <table name="tbl_address" schema="" catalog="jsp_db" type="TABLE">
+      <column name="id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="city" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
+      <column name="country" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
+      <column name="user_id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="tbl_user" schema="" catalog="jsp_db" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="5Li76ZSu" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="password" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <column name="email" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <index name="unique_id" unique="true" columns="id"/>
+    </table>
+  </data-source>
+</component>
