@@ -22,7 +22,7 @@ public class ConnectionFactory {
         Properties prop = new Properties();
         try {
             InputStream is = ConnectionFactory.class.getClassLoader()
-                            .getResourceAsStream("dbconfig.properties");
+                    .getResourceAsStream("dbconfig.properties");
             prop.load(is);
         } catch (IOException e) {
             e.printStackTrace();
